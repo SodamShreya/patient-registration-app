@@ -2,7 +2,6 @@
   "name": "patient-registration-app",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,8 +10,11 @@
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.3.1",
+    "classnames": "^2.5.1",
+    "flag-icon-css": "^4.1.7",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

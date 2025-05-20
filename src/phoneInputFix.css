@@ -1,0 +1,42 @@
+/* Dropdown visibility fix */
+.react-tel-input .country-list {
+  max-height: 400px !important;         /* More space to view countries */
+  overflow-y: auto !important;          /* Scroll if needed */
+  z-index: 99999 !important;            /* Stay on top */
+  position: absolute !important;        /* Prevent cut off */
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
+  width: 100% !important;               /* Full width dropdown */
+  min-width: 300px !important;          /* Minimum width for better display */
+}
+
+/* Style each country row */
+.react-tel-input .country-list .country {
+  display: flex !important;
+  align-items: center !important;
+  padding: 8px 12px !important;
+}
+
+/* Country dial code in blue */
+.react-tel-input .country-list .country .dial-code {
+  margin-left: auto !important;
+  color: #2563eb !important;        /* Tailwind blue-600 */
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+/* Country name also blue */
+.react-tel-input .country-list .country .country-name {
+  margin-left: 10px !important;
+  color: #2563eb !important;        /* Same blue */
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+/* Input field text style fix */
+.react-tel-input input {
+  color: black !important;          /* Text inside phone input */
+  background-color: white !important;
+  font-weight: 500;
+}
