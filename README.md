@@ -1,12 +1,75 @@
 # React + Vite
+Here’s a clean and professional `README.md` content that you can copy-paste into your GitHub repo:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 🩺 Patient Registration App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a **frontend-only** Patient Registration web application built with **React**, **Tailwind CSS**, and **PGlite (SQLite-compatible in-memory DB)**. It allows users to register patients and run SQL queries directly from the browser — without any backend server.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 📋 Patient Registration Form with the following fields:
+
+  * Name
+  * Age
+  * Gender (Dropdown)
+  * Phone Number (with country code & flag)
+  * Address
+  * Blood Group (Dropdown)
+  * Emergency Contact (with country code & flag)
+* 🧠 Real-time local database using `@electric-sql/pglite`
+* 🛠 SQL Query Runner to fetch and display patient data
+* 🎨 Responsive UI styled with **Tailwind CSS** (blue & white theme)
+* 📱 Fully integrated country code selector using `react-phone-input-2`
+
+## 🧑‍💻 Tech Stack
+
+* **React** (via Vite)
+* **Tailwind CSS**
+* **@electric-sql/pglite** (for local SQLite-compatible storage)
+* **react-phone-input-2** (for country code dropdown)
+* **flag-icon-css** (for country flags)
+
+## 📦 Installation & Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/SodamShreya/patient-registration-app.git
+   cd patient-registration-app
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser at [http://localhost:5173](http://localhost:5173)
+
+> Note: All patient data is stored in memory only and will reset on refresh. No backend is used.
+
+## 📁 File Structure Overview
+
+```
+├── src/
+│   ├── App.jsx          # Main component
+│   ├── phoneInputFix.css # Custom phone input styles
+├── public/
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.js
+└── .gitignore
+```
+
+## 🌐 Live Demo
+
+Deployed Link: [https://patient-registration-app-orpin.vercel.app](https://patient-registration-app-orpin.vercel.app)
+
